@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Just a Simple Text Editor</title>
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <main id="container">
+        <div id="formatters">
+            <ul>
+                <li>
+                    <i><img src="./icons/icons8-cabeçalho-30.png" alt="Header" class="icon"
+                            onclick="format('formatBlock', 'H1')"></i>
+                </li>
+                <li>
+                    <i><img src="./icons/icons8-negrito-30.png" alt="Bold" class="icon" onclick="format('bold')"></i>
+                </li>
+                <li>
+                    <i><img src="./icons/icons8-itálico-30.png" alt="Italic" class="icon"
+                            onclick="format('italic')"></i>
+                </li>
+                <li>
+                    <i><img src="./icons/icons8-sublinhado-30.png" alt="Underlined" class="icon"
+                            onclick="format('underline')"></i></li>
+                <li>
+                    <i><img src="./icons/icons8-link-30.png" alt="Link" class="icon" onclick="setUrl()"></i>
+                </li>
+                <li>
+                    <i><img src="./icons/icons8-aspas-direitas-30.png" alt="Remove" class="icon"
+                            onclick="format('formatBlock', 'blockquote')"></i>
+                </li>
+                <li>
+                    <i><img src="./icons/icons8-remover-30.png" alt="Remove" class="icon"
+                            onclick="format('delete')"></i>
+                </li>
+            </ul>
+        </div>
+        <div id="userText" contenteditable="true"></div>
+    </main>
+</body>
+
+</html>
