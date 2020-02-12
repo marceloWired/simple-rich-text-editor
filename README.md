@@ -12,7 +12,7 @@ Just a simple text editor made with HTML, CSS and JavaScript
 - Underline
 - Link
 - Blockquote
-- Delete 
+- Delete Selected
 
 
 Would you like to try? Feel free!
